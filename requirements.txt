@@ -10,5 +10,5 @@ scipy==1.15.0
 scikit-learn==1.6.0
 pandas==2.2.3
 joblib==1.4.2
-StandardScaler==1.5.1
-SVC==1.5.1
+StandardScaler==0.5
+SVC==0.1
