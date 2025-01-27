@@ -6,8 +6,8 @@ import os
 
 app=Flask(__name__)
 
-classifier=pickle.load(open("Diabetes_P/diabetes_model.pkl","rb"))
-scaler=pickle.load(open("Diabetes_P/diabetes_model1.pkl","rb"))
+classifier=pickle.load(open(r"C:\Users\khush\OneDrive\Documents\Desktop\ML_Projects\Diabetes_P\diabetes_model.pkl","rb"))
+scaler=pickle.load(open(r"C:\Users\khush\OneDrive\Documents\Desktop\ML_Projects\Diabetes_P\diabetes_model1.pkl","rb"))
 
 @app.route('/')
 
