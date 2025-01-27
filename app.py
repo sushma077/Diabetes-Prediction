@@ -6,8 +6,7 @@ import os
 
 app=Flask(__name__)
 
-classifier=pickle.load(open("Diabetes-Prediction/diabetes_model.pkl","rb"))
-scaler=pickle.load(open("Diabetes-Prediction/diabetes_model1.pkl","rb"))
+
 
 curr=os.path.dirname(__file__)
 model_path=os.path.join(curr, "diabetes_model.pkl")
