@@ -9,6 +9,19 @@ app=Flask(__name__)
 classifier=pickle.load(open("Diabetes-Prediction/diabetes_model.pkl","rb"))
 scaler=pickle.load(open("Diabetes-Prediction/diabetes_model1.pkl","rb"))
 
+curr=os.path.dirname(__file__)
+model_path=os.path.join(curr, "diabetes_model.pkl")
+with open(model_path,"rb") as f:
+    classifier=pickle.load(f)
+
+
+curr_dir=os.path.dirname(__file__)
+model_path_dir=os.path.join(curr_dir, "diabetes_model1.pkl")
+with open(model_path_dir,"rb") as fl:
+    scaler=pickle.load(fl)
+
+
+
 
 @app.route('/')
 
