@@ -5,11 +5,11 @@ import pickle
 import os
 
 app=Flask(__name__)
-model=r"c:\Users\khush\OneDrive\Documents\Desktop\ML_Projects\Diabetes-Prediction\diabetes_model.pkl"
+model=r"C:\Users\khush\OneDrive\Documents\Desktop\ML_Projects\Diabetes-Prediction\diabetes_model.pkl"
 with open(model,'rb') as file:
     classifier=pickle.load(file)
 
-model=r"c:\Users\khush\OneDrive\Documents\Desktop\ML_Projects\Diabetes-Prediction\diabetes_model1.pkl"
+model=r"C:\Users\khush\OneDrive\Documents\Desktop\ML_Projects\Diabetes-Prediction\diabetes_model1.pkl"
 with open(model,'rb') as file:
     scaler=pickle.load(file)
 
