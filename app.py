@@ -1,16 +1,13 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import numpy as np
-
-import joblib
+import pickle
 import os
 
 app=Flask(__name__)
 
-
-classifier = joblib.load(r'C:\Users\khush\OneDrive\Documents\Desktop\ML_Projects\Diabetes-Prediction\diabetes_model_job.pkl')
-scaler = joblib.load(r'C:\Users\khush\OneDrive\Documents\Desktop\ML_Projects\Diabetes-Prediction\diabetes_model_job1.pkl')
-
+classifier=pickle.load(open("Diabetes_P/diabetes_model.pkl","rb"))
+scaler=pickle.load(open("Diabetes_P/diabetes_model1.pkl","rb"))
 
 @app.route('/')
 
